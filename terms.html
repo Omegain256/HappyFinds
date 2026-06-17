@@ -2,284 +2,296 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-<!-- SEO: Primary -->
 <title>Terms of Service | HappyFinds</title>
-<meta name="description" content="Read the Terms of Service for HappyFinds AI Video production, licensing, and client retainers.">
+<meta name="description" content="Read the HappyFinds Terms of Service for AI video production, licensing, acceptable use, and client deliverables.">
 <meta name="author" content="HappyFinds">
 <link rel="canonical" href="https://happyfinds.co.ke/terms.html">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Alumni+Sans+Pinstripe:ital@0;1&family=Alumni+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
 
 :root {
-  /* Impeccable Design System: Neo Kinpaku Tokens */
-  --bg:                  oklch(7% 0.006 95);         /* urushi lacquer-black ground */
-  --lacquer-deep:        oklch(4% 0.004 95);         /* deepest inset */
-  --surface:             oklch(4% 0.004 95);
-  --surface-2:           oklch(11% 0.006 95);        /* raised lacquer panels */
-  --ink:                 oklch(88% 0 0);             /* text-warm main body */
-  --ink-2:               oklch(72% 0 0);             /* text-muted secondary text */
-  --ink-3:               oklch(62% 0 0);             /* text-faint subdued text */
-  
-  /* Brand accents */
-  --accent:              oklch(84% 0.19 80.46);      /* kinpaku-gold primary */
-  --accent-hi:           oklch(86% 0.07 84);         /* kinpaku-pale hover lift */
-  --accent-lo:           oklch(84% 0.19 80.46 / 0.12);
-  --patina:              oklch(70% 0.12 188);
-  
-  /* Spacers & dividers */
-  --on-night:            oklch(91% 0 0);
-  --gold-line:           oklch(74% 0.09 82 / 0.45);
-  --gold-hairline:       oklch(78% 0 0 / 0.15);
-
-  /* Spacing — 4pt scale */
-  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
-  --sp-6: 24px; --sp-8: 32px; --sp-12: 48px; --sp-16: 64px; --sp-24: 96px;
-
-  --radius: 4px;
-  --font-display: 'Alumni Sans Pinstripe', 'Alumni Sans', Arial, sans-serif;
-  --font-body:    'Albert Sans', 'Space Grotesk', system-ui, sans-serif;
+  --bg: oklch(100% 0 0);
+  --sun: oklch(92% 0.16 97);
+  --sun-soft: oklch(96% 0.07 98);
+  --coral: oklch(67% 0.2 30);
+  --accent-text: oklch(40% 0.16 30);
+  --aqua: oklch(78% 0.15 185);
+  --ink: oklch(21% 0.04 70);
+  --ink-2: oklch(34% 0.045 70);
+  --white: oklch(100% 0 0);
+  --shadow-tight: 0 4px 8px oklch(42% 0.08 60 / 0.11);
+  --radius: 14px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --font-display: "Archivo Black", Impact, system-ui, sans-serif;
+  --font-body: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-html { scroll-behavior: smooth; font-size: 16px; background-color: var(--bg); }
-
-body {
+html {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
-  font-weight: 400;
-  line-height: 1.75;
-  overflow-x: hidden;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  background:
+    linear-gradient(90deg, oklch(88% 0.06 100 / 0.18) 1px, transparent 1px),
+    linear-gradient(0deg, oklch(88% 0.06 100 / 0.18) 1px, transparent 1px),
+    var(--bg);
+  background-size: 42px 42px;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 { 
-  letter-spacing: -0.01em;
-  font-family: var(--font-display);
+a { color: inherit; }
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-3) clamp(var(--space-4), 5vw, var(--space-12));
+  background: oklch(100% 0 0 / 0.92);
+  border-bottom: 2px solid var(--ink);
+  backdrop-filter: blur(16px);
 }
 
-/* ─── NAV ─── */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 var(--sp-12);
-  height: 64px;
-  background: color-mix(in oklch, var(--bg) 92%, transparent);
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--gold-hairline);
-}
-.logo {
-  font-family: 'Alumni Sans', var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 600;
-  color: var(--ink);
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2vw, 1.4rem);
+  line-height: 1;
   text-decoration: none;
-  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
-.logo-dot { color: var(--accent); }
+
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--sun);
+  color: var(--coral);
+  box-shadow: var(--shadow-tight);
+}
 
 .nav-links {
-  display: flex; align-items: center;
-  list-style: none; gap: var(--sp-8);
+  display: flex;
+  align-items: center;
+  gap: clamp(var(--space-3), 2vw, var(--space-8));
+  list-style: none;
+  padding: 0;
 }
+
 .nav-links a {
-  font-size: 0.75rem; font-weight: 500;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--ink-2); text-decoration: none;
-  transition: color 0.18s;
-  min-height: 44px; display: inline-flex; align-items: center;
-}
-.nav-links a:hover { color: var(--accent); }
-
-.btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2);
-  padding: 0.6rem 1.6rem;
-  font-family: var(--font-body); font-size: 0.78rem;
-  font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-  border-radius: var(--radius); cursor: pointer; min-height: 44px;
-  text-decoration: none; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); border: none;
-}
-.btn-dark {
-  background: var(--accent); color: var(--lacquer-deep);
-  border: 1px solid var(--accent);
-}
-.btn-dark:hover { 
-  background: var(--accent-hi); 
-  border-color: var(--accent-hi); 
-  color: var(--lacquer-deep);
-}
-
-/* ─── LEGAL CONTENT ─── */
-.legal-section {
-  padding: 120px var(--sp-6) var(--sp-24);
-  max-width: 800px;
-  margin: 0 auto;
-  min-height: 80vh;
-}
-.section-label {
-  font-family: var(--font-body);
-  font-size: 0.7rem; font-weight: 500;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--accent); margin-bottom: var(--sp-4);
-  display: flex; align-items: center; gap: var(--sp-4);
-}
-.section-label::after {
-  content: ''; flex: 1; height: 1px;
-  background: var(--gold-hairline);
-  max-width: 48px;
-}
-h1 {
-  font-size: clamp(3rem, 5.5vw, 4.4rem);
-  font-weight: 300; line-height: 1.05;
-  color: var(--on-night);
-  text-transform: uppercase;
-  margin-bottom: var(--sp-4);
-}
-.section-sub {
-  font-size: 1.02rem; color: var(--ink-2);
-  line-height: 1.8; margin-bottom: var(--sp-12);
-  font-weight: 300;
-}
-.legal-body {
-  color: var(--ink-2);
-  line-height: 1.8;
-  font-weight: 300;
-}
-.legal-body h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--on-night);
-  margin: var(--sp-8) 0 var(--sp-3);
-}
-.legal-body p {
-  margin-bottom: var(--sp-4);
-}
-.legal-body a {
-  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 0.9rem;
+  font-weight: 800;
   text-decoration: none;
 }
-.legal-body a:hover {
-  text-decoration: underline;
-  color: var(--accent-hi);
+
+.nav-links a:hover { color: var(--accent-text); }
+
+.btn {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.78rem 1.15rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--coral);
+  color: var(--ink);
+  font: 800 0.9rem/1 var(--font-body);
+  text-decoration: none;
+  box-shadow: var(--shadow-tight);
 }
 
-/* ─── FOOTER ─── */
-footer {
-  padding: var(--sp-16) var(--sp-12);
-  border-top: 1px solid var(--gold-hairline);
-  background: var(--bg);
-  display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--sp-12);
+.legal {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1.45fr);
+  gap: clamp(var(--space-8), 6vw, var(--space-12));
+  padding: clamp(48px, 6vw, 72px) clamp(var(--space-4), 5vw, var(--space-12));
+  background: var(--sun-soft);
+  box-shadow: inset 0 -2px 0 var(--ink);
 }
-.footer-brand { max-width: 320px; }
+
+.legal h1 {
+  max-width: 11ch;
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 9vw, 5.6rem);
+  font-weight: 400;
+  line-height: 0.94;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+.updated {
+  margin-top: var(--space-4);
+  color: var(--accent-text);
+  font-weight: 900;
+}
+
+.legal-body {
+  padding: clamp(var(--space-6), 4vw, var(--space-8));
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: 0 0 0 2px var(--ink), 10px 10px 0 var(--ink);
+}
+
+.legal-body h2 {
+  margin-top: var(--space-8);
+  font: 900 1.35rem/1.2 var(--font-body);
+}
+
+.legal-body h2:first-child { margin-top: 0; }
+
+.legal-body p {
+  max-width: 72ch;
+  margin-top: var(--space-3);
+  color: var(--ink-2);
+  font-weight: 650;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.4fr) repeat(2, minmax(180px, 0.6fr));
+  gap: var(--space-8);
+  padding: var(--space-12) clamp(var(--space-4), 5vw, var(--space-12));
+  background: var(--sun);
+}
+
+.footer-brand {
+  max-width: 36rem;
+  font-weight: 750;
+}
+
 .footer-logo {
-  font-family: 'Alumni Sans', var(--font-display);
-  font-size: 1.4rem; font-weight: 600;
-  color: var(--ink); text-decoration: none; display: inline-block;
-  margin-bottom: var(--sp-4);
-  letter-spacing: 0.15em;
+  display: inline-flex;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  text-decoration: none;
   text-transform: uppercase;
 }
-.footer-brand p { font-size: 0.85rem; color: var(--ink-3); line-height: 1.6; margin-bottom: var(--sp-4); font-weight: 300; }
-.footer-col { display: flex; flex-direction: column; gap: var(--sp-3); }
-.footer-col-title { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); margin-bottom: var(--sp-2); }
-.footer-col a { color: var(--ink-2); text-decoration: none; font-size: 0.85rem; display: inline-flex; align-items: center; min-height: 32px; transition: color 0.18s; font-weight: 300; }
-.footer-col a:hover { color: var(--accent); }
 
-.reveal {
-  opacity: 0; transform: translateY(20px);
-  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
 }
-.reveal.in { opacity: 1; transform: translateY(0); }
 
-@media (max-width: 960px) {
-  nav { padding: 0 var(--sp-6); }
+.footer-col-title {
+  margin-bottom: var(--space-2);
+  font-weight: 900;
+}
+
+.footer-col a {
+  min-height: 34px;
+  color: var(--ink-2);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.footer-col a:hover { color: var(--accent-text); }
+
+:focus-visible {
+  outline: 3px solid var(--aqua);
+  outline-offset: 3px;
+}
+
+@media (max-width: 860px) {
   .nav-links { display: none; }
-  .legal-section { padding-top: 100px; }
-  footer { padding: var(--sp-8) var(--sp-6); grid-template-columns: 1fr; text-align: center; gap: var(--sp-8); }
-  .footer-brand { max-width: 100%; }
+  .legal { grid-template-columns: 1fr; }
+  footer { grid-template-columns: 1fr; }
 }
 </style>
 </head>
 <body>
-
-<!-- NAV -->
-<nav>
-  <a href="index.html" class="logo" aria-label="HappyFinds home">HappyFinds<span class="logo-dot">.</span></a>
+<nav class="site-nav" aria-label="Primary navigation">
+  <a href="index.html" class="brand" aria-label="HappyFinds home"><span class="brand-mark">*</span> HappyFinds</a>
   <ul class="nav-links" role="list">
-    <li><a href="index.html#services">Services</a></li>
-    <li><a href="index.html#how">Process</a></li>
-    <li><a href="index.html#results">Results</a></li>
-    <li><a href="index.html#pricing">Pricing</a></li>
+    <li><a href="index.html#work">Work</a></li>
+    <li><a href="index.html#process">Process</a></li>
+    <li><a href="index.html#proof">Proof</a></li>
     <li><a href="index.html#faq">FAQ</a></li>
   </ul>
-  <a href="index.html#pricing" class="btn btn-dark">Get started</a>
+  <a href="contact.html" class="btn">Book a call</a>
 </nav>
 
-<!-- LEGAL CONTENT -->
-<section class="legal-section">
-  <div class="reveal">
-    <p class="section-label">Legal Information</p>
-    <h1>Terms of Service</h1>
-    <p class="section-sub">Last updated: June 17, 2026</p>
-    
-    <div class="legal-body">
-      <h3>1. Agreement to Terms</h3>
-      <p>By accessing our website at happyfinds.co.ke or subscribing to our monthly AI video retainers, you agree to comply with and be bound by these Terms of Service. If you disagree with any part of these terms, you must refrain from using our creative rendering services.</p>
-      
-      <h3>2. Services and Retainers</h3>
-      <p>HappyFinds provides monthly AI-generated video ads, content repurposing, and digital avatar rendering services. All service plans (Starter, Growth, and Enterprise) operate on a recurring billing cycle. You may cancel or upgrade your active retainer tier at any point, subject to a 30-day notice period to pause active rendering queues.</p>
-      
-      <h3>3. Intellectual Property Rights</h3>
-      <p>• <strong>Client Assets:</strong> You retain complete ownership of all product graphics, brand logos, phone footages, and voice samples provided to HappyFinds.</p>
-      <p>• <strong>Delivered Media:</strong> Upon full payment of the monthly invoice, HappyFinds transfers all rights, title, and ownership of the compiled MP4/MOV output videos to the client for unrestricted promotional use.</p>
-      <p>• <strong>AI Training Models:</strong> We do not utilize your branded product graphics or custom voice clips to train open-source public models.</p>
+<main class="legal">
+  <header>
+    <h1>Terms of service</h1>
+    <p class="updated">Last updated: June 17, 2026</p>
+  </header>
+  <article class="legal-body">
+    <h2>1. Agreement to terms</h2>
+    <p>By accessing happyfinds.co.ke or working with HappyFinds, you agree to these Terms of Service. If you disagree with any part of these terms, please do not use our services.</p>
 
-      <h3>4. Rendering Limitation and Acceptable Use</h3>
-      <p>You agree not to submit any brand assets or scripts that contain defamatory, abusive, illegal, or infringing content. We reserve the right to cancel active rendering orders if the script content violates ethical norms or local legislation in Kenya.</p>
+    <h2>2. Services</h2>
+    <p>HappyFinds provides AI-assisted video ads, short-form content, launch films, avatar-led videos, editing, scripting, and related creative production services. Project scope, timelines, deliverables, and approval steps are confirmed in writing before work begins.</p>
 
-      <h3>5. Governing Law</h3>
-      <p>These Terms of Service are governed by and construed in accordance with the laws of Kenya, without regard to its conflict of law principles. Any legal disputes arising under these terms shall be subject to the exclusive jurisdiction of the courts of Kenya.</p>
-    </div>
-  </div>
-</section>
+    <h2>3. Intellectual property</h2>
+    <p>You retain ownership of product imagery, brand assets, source footage, logos, and approved voice samples you provide. After project completion and payment of agreed invoices, delivered video files are licensed for your promotional use unless a separate written agreement says otherwise.</p>
 
-<!-- FOOTER -->
+    <h2>4. AI models and client assets</h2>
+    <p>We do not use your private brand assets, product graphics, voice samples, or custom footage to train public AI models. Client assets are used to produce the approved project deliverables.</p>
+
+    <h2>5. Acceptable use</h2>
+    <p>You agree not to submit assets, scripts, or instructions that are defamatory, illegal, abusive, infringing, deceptive, or unauthorized. We may decline work that violates consent, safety, platform, or legal requirements.</p>
+
+    <h2>6. Governing law</h2>
+    <p>These Terms of Service are governed by the laws of Kenya. Disputes are subject to the jurisdiction of the courts of Kenya.</p>
+  </article>
+</main>
+
 <footer>
   <div class="footer-brand">
-    <a href="index.html" class="footer-logo">HappyFinds<span style="color:var(--accent)">.</span></a>
-    <p>We build premium AI video systems designed for scalable marketing, combining state-of-the-art generation models with professional video editing.</p>
-    <p>© 2026 HappyFinds. Based in Kenya, rendering globally.</p>
+    <a href="index.html" class="footer-logo">HappyFinds</a>
+    <p>Bright AI video production for brands that need more finished creative, better hooks, and faster learning loops.</p>
+    <p>© 2026 HappyFinds. Based in Kenya, creating globally.</p>
   </div>
   <div class="footer-col">
-    <span class="footer-col-title">Services</span>
-    <a href="index.html#services">AI Video Ads</a>
-    <a href="index.html#services">Short-Form Content</a>
-    <a href="index.html#services">Avatar Clones</a>
-    <a href="index.html#services">Content Repurposing</a>
+    <span class="footer-col-title">Make</span>
+    <a href="index.html#work">Video ads</a>
+    <a href="index.html#work">Short-form content</a>
+    <a href="index.html#work">Avatar systems</a>
+    <a href="index.html#work">Launch films</a>
   </div>
   <div class="footer-col">
     <span class="footer-col-title">Company</span>
-    <a href="index.html#results">Case Studies</a>
-    <a href="index.html#pricing">Pricing</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
+    <a href="index.html#proof">Proof</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
   </div>
 </footer>
-
-<script>
-/* ── Intersection Observer ── */
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); } });
-}, { threshold: 0.05 });
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-</script>
 </body>
 </html>

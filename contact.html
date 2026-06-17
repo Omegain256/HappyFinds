@@ -2,352 +2,426 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-<!-- SEO: Primary -->
 <title>Contact Our AI Video Production Team | HappyFinds</title>
-<meta name="description" content="Get in touch with HappyFinds to discuss your AI video ads, social content retainers, or custom avatar clones. Request a free video audit today.">
+<meta name="description" content="Tell HappyFinds about your campaign, video ads, short-form content needs, or AI avatar project. Request a strategy call today.">
 <meta name="keywords" content="AI video agency, contact video production, video marketing Kenya, custom AI video ads">
 <meta name="author" content="HappyFinds">
 <link rel="canonical" href="https://happyfinds.co.ke/contact.html">
 
-<!-- SEO: Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://happyfinds.co.ke/contact.html">
 <meta property="og:title" content="Contact Our AI Video Production Team | HappyFinds">
-<meta property="og:description" content="Get in touch to scale your brand's visual output with custom AI video ads and social media retainers.">
+<meta property="og:description" content="Get in touch to scale your brand's visual output with AI video ads, reels, launch films, and avatar content.">
 <meta property="og:image" content="https://happyfinds.co.ke/og-image.jpg">
 <meta property="og:site_name" content="HappyFinds">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Alumni+Sans+Pinstripe:ital@0;1&family=Alumni+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
 
 :root {
-  /* Impeccable Design System: Neo Kinpaku Tokens */
-  --bg:                  oklch(7% 0.006 95);         /* urushi lacquer-black ground */
-  --lacquer-deep:        oklch(4% 0.004 95);         /* deepest inset */
-  --surface:             oklch(4% 0.004 95);
-  --surface-2:           oklch(11% 0.006 95);        /* raised lacquer panels */
-  --ink:                 oklch(88% 0 0);             /* text-warm main body */
-  --ink-2:               oklch(72% 0 0);             /* text-muted secondary text */
-  --ink-3:               oklch(62% 0 0);             /* text-faint subdued text */
-  
-  /* Brand accents */
-  --accent:              oklch(84% 0.19 80.46);      /* kinpaku-gold primary */
-  --accent-hi:           oklch(86% 0.07 84);         /* kinpaku-pale hover lift */
-  --accent-lo:           oklch(84% 0.19 80.46 / 0.12); /* transparent gold glow base */
-  --patina:              oklch(70% 0.12 188);        /* verdigris-patina secondary */
-  
-  /* Spacers & dividers */
-  --night:               oklch(4% 0.004 95);
-  --night-2:             oklch(11% 0.006 95);
-  --on-night:            oklch(91% 0 0);             /* champagne text */
-  --gold-line:           oklch(74% 0.09 82 / 0.45);  /* active gold rule */
-  --gold-hairline:       oklch(78% 0 0 / 0.15);      /* inactive rule */
-
-  /* Spacing — 4pt scale */
-  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
-  --sp-6: 24px; --sp-8: 32px; --sp-12: 48px; --sp-16: 64px; --sp-24: 96px;
-
-  --radius: 4px;
-  --font-display: 'Alumni Sans Pinstripe', 'Alumni Sans', Arial, sans-serif;
-  --font-body:    'Albert Sans', 'Space Grotesk', system-ui, sans-serif;
+  --bg: oklch(100% 0 0);
+  --sun: oklch(92% 0.16 97);
+  --sun-soft: oklch(96% 0.07 98);
+  --pink: oklch(74% 0.19 355);
+  --pink-soft: oklch(94% 0.045 355);
+  --coral: oklch(67% 0.2 30);
+  --accent-text: oklch(40% 0.16 30);
+  --aqua: oklch(78% 0.15 185);
+  --mint: oklch(92% 0.09 160);
+  --ink: oklch(21% 0.04 70);
+  --ink-2: oklch(34% 0.045 70);
+  --ink-3: oklch(47% 0.04 70);
+  --line: oklch(78% 0.055 85);
+  --white: oklch(100% 0 0);
+  --shadow-tight: 0 4px 8px oklch(42% 0.08 60 / 0.11);
+  --radius: 14px;
+  --radius-sm: 8px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --font-display: "Archivo Black", Impact, system-ui, sans-serif;
+  --font-body: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-html { scroll-behavior: smooth; font-size: 16px; background-color: var(--bg); }
-
-body {
+html {
+  scroll-behavior: smooth;
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
-  font-weight: 400;
-  line-height: 1.75;
-  overflow-x: hidden;
+  font-size: 16px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    linear-gradient(90deg, oklch(88% 0.06 100 / 0.22) 1px, transparent 1px),
+    linear-gradient(0deg, oklch(88% 0.06 100 / 0.22) 1px, transparent 1px),
+    var(--bg);
+  background-size: 42px 42px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 { 
-  letter-spacing: -0.01em;
+h1, h2, h3 {
   font-family: var(--font-display);
-}
-
-/* ─── NAV ─── */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 var(--sp-12);
-  height: 64px;
-  background: color-mix(in oklch, var(--bg) 92%, transparent);
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--gold-hairline);
-}
-.logo {
-  font-family: 'Alumni Sans', var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 600;
-  color: var(--ink);
-  text-decoration: none;
-  letter-spacing: 0.15em;
+  font-weight: 400;
+  line-height: 0.94;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
   text-transform: uppercase;
 }
-.logo-dot { color: var(--accent); }
+
+p { text-wrap: pretty; }
+a { color: inherit; }
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-3) clamp(var(--space-4), 5vw, var(--space-12));
+  background: oklch(99% 0.015 105 / 0.92);
+  border-bottom: 2px solid var(--ink);
+  backdrop-filter: blur(16px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2vw, 1.4rem);
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--sun);
+  color: var(--coral);
+  box-shadow: var(--shadow-tight);
+}
 
 .nav-links {
-  display: flex; align-items: center;
-  list-style: none; gap: var(--sp-8);
+  display: flex;
+  align-items: center;
+  gap: clamp(var(--space-3), 2vw, var(--space-8));
+  list-style: none;
+  padding: 0;
 }
+
 .nav-links a {
-  font-size: 0.75rem; font-weight: 500;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--ink-2); text-decoration: none;
-  transition: color 0.18s;
-  min-height: 44px; display: inline-flex; align-items: center;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
 }
-.nav-links a:hover { color: var(--accent); }
+
+.nav-links a:hover { color: var(--accent-text); }
 
 .btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2);
-  padding: 0.6rem 1.6rem;
-  font-family: var(--font-body); font-size: 0.78rem;
-  font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-  border-radius: var(--radius); cursor: pointer; min-height: 44px;
-  text-decoration: none; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); border: none;
-}
-.btn-dark {
-  background: var(--accent); color: var(--lacquer-deep);
-  border: 1px solid var(--accent);
-}
-.btn-dark:hover { 
-  background: var(--accent-hi); 
-  border-color: var(--accent-hi); 
-  color: var(--lacquer-deep);
-}
-.btn-accent {
-  background: var(--accent); color: var(--lacquer-deep);
-  border: 1px solid var(--accent);
-  box-shadow: 0 4px 16px var(--accent-lo);
-}
-.btn-accent:hover { 
-  background: var(--accent-hi); 
-  border-color: var(--accent-hi);
-}
-
-/* ─── CONTACT CONTENT ─── */
-.contact-section {
-  padding: 120px var(--sp-6) var(--sp-24);
-  max-width: 680px;
-  margin: 0 auto;
-  min-height: 85vh;
-}
-.section-label {
-  font-family: var(--font-body);
-  font-size: 0.7rem; font-weight: 500;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--accent); margin-bottom: var(--sp-4);
-  display: flex; align-items: center; gap: var(--sp-4);
-}
-.section-label::after {
-  content: ''; flex: 1; height: 1px;
-  background: var(--gold-hairline);
-  max-width: 48px;
-}
-h1 {
-  font-size: clamp(3rem, 5.5vw, 4.4rem);
-  font-weight: 300; line-height: 1.05;
-  color: var(--on-night);
-  text-transform: uppercase;
-  margin-bottom: var(--sp-4);
-}
-.section-sub {
-  font-size: 1.02rem; color: var(--ink-2);
-  line-height: 1.8; margin-bottom: var(--sp-12);
-  font-weight: 300;
-}
-.section-sub a {
-  color: var(--accent);
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 0.78rem 1.15rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--ink);
+  font: 800 0.9rem/1 var(--font-body);
   text-decoration: none;
-  font-weight: 500;
-}
-.section-sub a:hover {
-  text-decoration: underline;
-  color: var(--accent-hi);
+  cursor: pointer;
+  box-shadow: var(--shadow-tight);
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), background 180ms ease, box-shadow 180ms ease;
 }
 
-/* Form Styling */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-6);
-  background: var(--surface-2);
-  border: 1px solid var(--gold-hairline);
-  border-radius: var(--radius);
-  padding: var(--sp-8);
-  box-shadow: 0 16px 40px oklch(4% 0.004 95 / 0.4);
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 14px oklch(42% 0.08 60 / 0.16);
 }
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-2);
+
+.btn-primary { background: var(--coral); color: var(--ink); }
+.btn-sun { background: var(--sun); }
+
+.contact-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  gap: clamp(var(--space-8), 6vw, var(--space-16));
+  min-height: auto;
+  padding: clamp(56px, 7vw, 88px) clamp(var(--space-4), 5vw, var(--space-12));
+  align-items: center;
+  background: var(--sun-soft);
+  border-bottom: 2px solid var(--ink);
 }
-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+
+.contact-copy h1 {
+  max-width: 9ch;
+  font-size: clamp(4rem, 12vw, 6rem);
+}
+
+.kicker {
+  margin-bottom: var(--space-6);
+  color: var(--accent-text);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 850;
+}
+
+.contact-copy p {
+  max-width: 56ch;
+  margin-top: var(--space-6);
   color: var(--ink-2);
-}
-input, select, textarea {
-  padding: 0.75rem var(--sp-4);
-  border: 1px solid var(--gold-hairline);
-  border-radius: var(--radius);
-  background: var(--lacquer-deep);
-  font-family: var(--font-body); font-size: 0.875rem;
-  color: var(--ink); outline: none;
-  transition: border-color 0.2s;
-  min-height: 44px;
-}
-input:focus, select:focus, textarea:focus {
-  border-color: var(--accent);
-}
-input::placeholder, textarea::placeholder {
-  color: var(--ink-3);
-}
-textarea {
-  resize: vertical;
-  min-height: 140px;
+  font-size: clamp(1rem, 1.4vw, 1.17rem);
+  font-weight: 650;
 }
 
-/* ─── FOOTER ─── */
-footer {
-  padding: var(--sp-16) var(--sp-12);
-  border-top: 1px solid var(--gold-hairline);
-  background: var(--bg);
-  display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--sp-12);
+.contact-copy a {
+  color: var(--accent-text);
+  font-weight: 900;
 }
-.footer-brand { max-width: 320px; }
+
+.contact-card {
+  position: relative;
+  padding: 32px;
+  padding: clamp(var(--space-5, 20px), 4vw, var(--space-8));
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: 0 0 0 2px var(--ink), 12px 12px 0 var(--ink);
+}
+
+.contact-card::before {
+  content: "Start here";
+  position: absolute;
+  top: -24px;
+  right: 24px;
+  padding: 0.35rem 0.75rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--pink);
+  color: var(--white);
+  font-weight: 900;
+  transform: rotate(4deg);
+}
+
+form {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.form-group {
+  display: grid;
+  gap: var(--space-2);
+}
+
+label {
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 900;
+}
+
+input, select, textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 0.82rem 0.9rem;
+  border: 2px solid var(--ink);
+  border-radius: var(--radius-sm);
+  background: var(--sun-soft);
+  color: var(--ink);
+  font: 700 1rem/1.2 var(--font-body);
+  outline: none;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+  line-height: 1.45;
+}
+
+input::placeholder, textarea::placeholder { color: var(--ink-3); opacity: 1; }
+input:focus, select:focus, textarea:focus { background: var(--mint); }
+
+.form-note {
+  color: var(--ink-2);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.4fr) repeat(2, minmax(180px, 0.6fr));
+  gap: var(--space-8);
+  padding: var(--space-12) clamp(var(--space-4), 5vw, var(--space-12));
+  background: var(--sun);
+}
+
+.footer-brand {
+  max-width: 36rem;
+  font-weight: 750;
+}
+
 .footer-logo {
-  font-family: 'Alumni Sans', var(--font-display);
-  font-size: 1.4rem; font-weight: 600;
-  color: var(--ink); text-decoration: none; display: inline-block;
-  margin-bottom: var(--sp-4);
-  letter-spacing: 0.15em;
+  display: inline-flex;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  text-decoration: none;
   text-transform: uppercase;
 }
-.footer-brand p { font-size: 0.85rem; color: var(--ink-3); line-height: 1.6; margin-bottom: var(--sp-4); font-weight: 300; }
-.footer-col { display: flex; flex-direction: column; gap: var(--sp-3); }
-.footer-col-title { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); margin-bottom: var(--sp-2); }
-.footer-col a { color: var(--ink-2); text-decoration: none; font-size: 0.85rem; display: inline-flex; align-items: center; min-height: 32px; transition: color 0.18s; font-weight: 300; }
-.footer-col a:hover { color: var(--accent); }
 
-.reveal {
-  opacity: 0; transform: translateY(20px);
-  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
 }
-.reveal.in { opacity: 1; transform: translateY(0); }
 
-@media (max-width: 960px) {
-  nav { padding: 0 var(--sp-6); }
+.footer-col-title {
+  margin-bottom: var(--space-2);
+  font-weight: 900;
+}
+
+.footer-col a {
+  min-height: 34px;
+  color: var(--ink-2);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.footer-col a:hover { color: var(--accent-text); }
+
+:focus-visible {
+  outline: 3px solid var(--aqua);
+  outline-offset: 3px;
+}
+
+@media (max-width: 980px) {
+  .contact-hero { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
   .nav-links { display: none; }
-  .contact-section { padding-top: 100px; }
-  footer { padding: var(--sp-8) var(--sp-6); grid-template-columns: 1fr; text-align: center; gap: var(--sp-8); }
-  .footer-brand { max-width: 100%; }
+  .site-nav .btn { padding-inline: 0.9rem; }
+  .contact-hero { padding: var(--space-8) var(--space-4); }
+  .contact-copy h1 { font-size: clamp(3.45rem, 19vw, 5.2rem); }
+  .contact-card { box-shadow: 8px 8px 0 var(--ink); }
+  footer { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 </style>
 </head>
 <body>
-
-<!-- NAV -->
-<nav>
-  <a href="index.html" class="logo" aria-label="HappyFinds home">HappyFinds<span class="logo-dot">.</span></a>
+<nav class="site-nav" aria-label="Primary navigation">
+  <a href="index.html" class="brand" aria-label="HappyFinds home"><span class="brand-mark">*</span> HappyFinds</a>
   <ul class="nav-links" role="list">
-    <li><a href="index.html#services">Services</a></li>
-    <li><a href="index.html#how">Process</a></li>
-    <li><a href="index.html#results">Results</a></li>
-    <li><a href="index.html#pricing">Pricing</a></li>
+    <li><a href="index.html#work">Work</a></li>
+    <li><a href="index.html#process">Process</a></li>
+    <li><a href="index.html#proof">Proof</a></li>
     <li><a href="index.html#faq">FAQ</a></li>
   </ul>
-  <a href="index.html#pricing" class="btn btn-dark">Get started</a>
+  <a href="contact.html" class="btn btn-primary">Book a call</a>
 </nav>
 
-<!-- CONTACT CONTENT -->
-<section class="contact-section">
-  <div class="reveal">
-    <p class="section-label">Connect with Us</p>
-    <h1>Let's Create Together</h1>
-    <p class="section-sub">Ready to transform your brand with high-performing AI video ads and social media clips? Fill out our inquiry form below, or email us directly at <a href="mailto:hello@happyfinds.co.ke">hello@happyfinds.co.ke</a>.</p>
-    
-    <form action="success.html" method="GET">
-      <div class="form-group">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="E.g. John Doe" required autocomplete="name">
-      </div>
-      
-      <div class="form-group">
-        <label for="email">Work Email</label>
-        <input type="email" id="email" name="email" placeholder="E.g. john@yourbrand.com" required autocomplete="email">
-      </div>
+<main>
+  <section class="contact-hero">
+    <div class="contact-copy">
+      <p class="kicker">Ready when the brief is.</p>
+      <h1>Let's make the next video</h1>
+      <p>Tell us what you sell, where you publish, and what kind of creative needs to move. Prefer email? Reach us at <a href="mailto:hello@happyfinds.co.ke">hello@happyfinds.co.ke</a>.</p>
+    </div>
+    <div class="contact-card">
+      <form action="success.html" method="GET">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required autocomplete="name">
+        </div>
 
-      <div class="form-group">
-        <label for="website">Company Website URL</label>
-        <input type="url" id="website" name="website" placeholder="E.g. https://yourbrand.com" required>
-      </div>
+        <div class="form-group">
+          <label for="email">Work email</label>
+          <input type="email" id="email" name="email" placeholder="jane@yourbrand.com" required autocomplete="email">
+        </div>
 
-      <div class="form-group">
-        <label for="type">Primary Creative Need</label>
-        <select id="type" name="type" required>
-          <option value="" disabled selected>Select an option...</option>
-          <option value="ads">High-Converting AI Video Ads</option>
-          <option value="shorts">Viral Shorts &amp; Reels Retainer</option>
-          <option value="avatar">AI Avatar &amp; Explainer Videos</option>
-          <option value="repurpose">Content Repurposing</option>
-          <option value="bespoke">Bespoke Enterprise Combo</option>
-        </select>
-      </div>
-      
-      <div class="form-group">
-        <label for="message">Project Scope &amp; Script Requirements</label>
-        <textarea id="message" name="message" placeholder="Tell us about your brand, what kind of videos you need, and any timelines you're working with..." required></textarea>
-      </div>
-      
-      <button type="submit" class="btn btn-accent btn-lg" style="border: none; margin-top: var(--sp-2);">Request Strategy Call</button>
-    </form>
-  </div>
-</section>
+        <div class="form-group">
+          <label for="website">Website or social link</label>
+          <input type="url" id="website" name="website" placeholder="https://yourbrand.com" required>
+        </div>
 
-<!-- FOOTER -->
+        <div class="form-group">
+          <label for="type">Primary creative need</label>
+          <select id="type" name="type" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="ads">AI video ads</option>
+            <option value="shorts">Shorts and reels package</option>
+            <option value="avatar">AI avatar or explainer system</option>
+            <option value="launch">Launch film</option>
+            <option value="bespoke">Bespoke campaign</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">What should the video do?</label>
+          <textarea id="message" name="message" placeholder="Tell us about the brand, product, platforms, timeline, and any creative references you already like." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Request strategy call</button>
+        <p class="form-note">We usually reply within one business day with next steps or a few sharper questions.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
 <footer>
   <div class="footer-brand">
-    <a href="index.html" class="footer-logo">HappyFinds<span style="color:var(--accent)">.</span></a>
-    <p>We build premium AI video systems designed for scalable marketing, combining state-of-the-art generation models with professional video editing.</p>
-    <p>© 2026 HappyFinds. Based in Kenya, rendering globally.</p>
+    <a href="index.html" class="footer-logo">HappyFinds</a>
+    <p>Bright AI video production for brands that need more finished creative, better hooks, and faster learning loops.</p>
+    <p>© 2026 HappyFinds. Based in Kenya, creating globally.</p>
   </div>
   <div class="footer-col">
-    <span class="footer-col-title">Services</span>
-    <a href="index.html#services">AI Video Ads</a>
-    <a href="index.html#services">Short-Form Content</a>
-    <a href="index.html#services">Avatar Clones</a>
-    <a href="index.html#services">Content Repurposing</a>
+    <span class="footer-col-title">Make</span>
+    <a href="index.html#work">Video ads</a>
+    <a href="index.html#work">Short-form content</a>
+    <a href="index.html#work">Avatar systems</a>
+    <a href="index.html#work">Launch films</a>
   </div>
   <div class="footer-col">
     <span class="footer-col-title">Company</span>
-    <a href="index.html#results">Case Studies</a>
-    <a href="index.html#pricing">Pricing</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
+    <a href="index.html#proof">Proof</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
   </div>
 </footer>
-
-<script>
-/* ── Intersection Observer ── */
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); } });
-}, { threshold: 0.05 });
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-</script>
 </body>
 </html>

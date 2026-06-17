@@ -2,273 +2,207 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-<!-- SEO: Primary -->
 <title>Thank You for Contacting Us | HappyFinds</title>
-<meta name="description" content="Your message has been successfully received. We will reach out within 24 hours to discuss your AI video production needs.">
+<meta name="description" content="Your HappyFinds message has been received. We will reach out soon to discuss your AI video production needs.">
 <meta name="author" content="HappyFinds">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Alumni+Sans+Pinstripe:ital@0;1&family=Alumni+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
 
 :root {
-  /* Impeccable Design System: Neo Kinpaku Tokens */
-  --bg:                  oklch(7% 0.006 95);         /* urushi lacquer-black ground */
-  --lacquer-deep:        oklch(4% 0.004 95);         /* deepest inset */
-  --surface:             oklch(4% 0.004 95);
-  --surface-2:           oklch(11% 0.006 95);        /* raised lacquer panels */
-  --ink:                 oklch(88% 0 0);             /* text-warm main body */
-  --ink-2:               oklch(72% 0 0);             /* text-muted secondary text */
-  --ink-3:               oklch(62% 0 0);             /* text-faint subdued text */
-  
-  /* Brand accents */
-  --accent:              oklch(84% 0.19 80.46);      /* kinpaku-gold primary */
-  --accent-hi:           oklch(86% 0.07 84);         /* kinpaku-pale hover lift */
-  --accent-lo:           oklch(84% 0.19 80.46 / 0.12); /* transparent gold glow base */
-  --patina:              oklch(70% 0.12 188);        /* verdigris-patina secondary */
-  
-  /* Spacers & dividers */
-  --night:               oklch(4% 0.004 95);
-  --on-night:            oklch(91% 0 0);             /* champagne text */
-  --gold-line:           oklch(74% 0.09 82 / 0.45);  /* active gold rule */
-  --gold-hairline:       oklch(78% 0 0 / 0.15);      /* inactive rule */
-
-  /* Spacing — 4pt scale */
-  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
-  --sp-6: 24px; --sp-8: 32px; --sp-12: 48px; --sp-16: 64px; --sp-24: 96px;
-
-  --radius: 4px;
-  --font-display: 'Alumni Sans Pinstripe', 'Alumni Sans', Arial, sans-serif;
-  --font-body:    'Albert Sans', 'Space Grotesk', system-ui, sans-serif;
+  --bg: oklch(100% 0 0);
+  --sun: oklch(92% 0.16 97);
+  --sun-soft: oklch(96% 0.07 98);
+  --pink: oklch(74% 0.19 355);
+  --coral: oklch(67% 0.2 30);
+  --accent-text: oklch(40% 0.16 30);
+  --aqua: oklch(78% 0.15 185);
+  --mint: oklch(92% 0.09 160);
+  --ink: oklch(21% 0.04 70);
+  --ink-2: oklch(34% 0.045 70);
+  --white: oklch(100% 0 0);
+  --shadow-tight: 0 4px 8px oklch(42% 0.08 60 / 0.11);
+  --radius: 14px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --font-display: "Archivo Black", Impact, system-ui, sans-serif;
+  --font-body: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-html { scroll-behavior: smooth; font-size: 16px; background-color: var(--bg); }
-
-body {
+html {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
-  font-weight: 400;
-  line-height: 1.75;
-  overflow-x: hidden;
+  font-size: 16px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    linear-gradient(90deg, oklch(88% 0.06 100 / 0.22) 1px, transparent 1px),
+    linear-gradient(0deg, oklch(88% 0.06 100 / 0.22) 1px, transparent 1px),
+    var(--bg);
+  background-size: 42px 42px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 { 
-  letter-spacing: -0.01em;
+h1 {
+  max-width: 9ch;
   font-family: var(--font-display);
+  font-size: clamp(3.8rem, 13vw, 6rem);
+  font-weight: 400;
+  line-height: 0.94;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  text-wrap: balance;
 }
 
-/* ─── NAV ─── */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 var(--sp-12);
-  height: 64px;
-  background: color-mix(in oklch, var(--bg) 92%, transparent);
+p { text-wrap: pretty; }
+a { color: inherit; }
+
+.site-nav {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-3) clamp(var(--space-4), 5vw, var(--space-12));
+  background: oklch(99% 0.015 105 / 0.92);
+  border-bottom: 2px solid var(--ink);
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--gold-hairline);
 }
-.logo {
-  font-family: 'Alumni Sans', var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 600;
-  color: var(--ink);
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2vw, 1.4rem);
+  line-height: 1;
   text-decoration: none;
-  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
-.logo-dot { color: var(--accent); }
 
-.nav-links {
-  display: flex; align-items: center;
-  list-style: none; gap: var(--sp-8);
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--sun);
+  color: var(--coral);
+  box-shadow: var(--shadow-tight);
 }
-.nav-links a {
-  font-size: 0.75rem; font-weight: 500;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--ink-2); text-decoration: none;
-  transition: color 0.18s;
-  min-height: 44px; display: inline-flex; align-items: center;
-}
-.nav-links a:hover { color: var(--accent); }
 
 .btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2);
-  padding: 0.6rem 1.6rem;
-  font-family: var(--font-body); font-size: 0.78rem;
-  font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-  border-radius: var(--radius); cursor: pointer; min-height: 44px;
-  text-decoration: none; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); border: none;
-}
-.btn-dark {
-  background: var(--accent); color: var(--lacquer-deep);
-  border: 1px solid var(--accent);
-}
-.btn-dark:hover { 
-  background: var(--accent-hi); 
-  border-color: var(--accent-hi); 
-  color: var(--lacquer-deep);
-}
-.btn-accent {
-  background: var(--accent); color: var(--lacquer-deep);
-  border: 1px solid var(--accent);
-  box-shadow: 0 4px 16px var(--accent-lo);
-}
-.btn-accent:hover { 
-  background: var(--accent-hi); 
-  border-color: var(--accent-hi);
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 0.78rem 1.15rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--ink);
+  font: 800 0.9rem/1 var(--font-body);
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-tight);
 }
 
-/* ─── SUCCESS CONTENT ─── */
-.success-section {
-  padding: 160px var(--sp-6) var(--sp-24);
-  max-width: 600px;
-  margin: 0 auto;
-  min-height: 85vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.btn-primary { background: var(--coral); color: var(--ink); }
+.btn-sun { background: var(--sun); }
+
+.success {
+  min-height: auto;
+  display: grid;
+  place-items: center;
+  padding: clamp(56px, 7vw, 88px) var(--space-4);
+  background: var(--sun-soft);
 }
-.success-icon {
-  width: 64px;
-  height: 64px;
+
+.success-card {
+  width: min(100%, 720px);
+  padding: 48px;
+  padding: clamp(var(--space-8), 6vw, 64px);
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: 0 0 0 2px var(--ink), 12px 12px 0 var(--ink);
+}
+
+.success-mark {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  margin-bottom: var(--space-6);
+  border: 2px solid var(--ink);
   border-radius: 50%;
-  background: var(--accent-lo);
-  border: 1px solid var(--accent);
+  background: var(--mint);
+  color: var(--ink);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.success p {
+  max-width: 52ch;
+  margin-top: var(--space-6);
+  color: var(--ink-2);
+  font-size: clamp(1rem, 1.4vw, 1.16rem);
+  font-weight: 650;
+}
+
+.success-actions {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  color: var(--accent);
-  margin-bottom: var(--sp-6);
-  box-shadow: 0 0 16px var(--accent-lo);
-  animation: pulse-icon 2s infinite;
-}
-@keyframes pulse-icon {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-}
-.section-label {
-  font-family: var(--font-body);
-  font-size: 0.72rem; font-weight: 500;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--patina); margin-bottom: var(--sp-4);
-}
-h1 {
-  font-size: clamp(2.6rem, 5vw, 3.8rem);
-  font-weight: 300; line-height: 1.05;
-  color: var(--on-night);
-  text-transform: uppercase;
-  margin-bottom: var(--sp-4);
-}
-.section-sub {
-  font-size: 1.02rem; color: var(--ink-2);
-  line-height: 1.8; margin-bottom: var(--sp-8);
-  font-weight: 300;
-  max-width: 44ch;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
 }
 
-/* ─── FOOTER ─── */
-footer {
-  padding: var(--sp-16) var(--sp-12);
-  border-top: 1px solid var(--gold-hairline);
-  background: var(--bg);
-  display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--sp-12);
+:focus-visible {
+  outline: 3px solid var(--aqua);
+  outline-offset: 3px;
 }
-.footer-brand { max-width: 320px; }
-.footer-logo {
-  font-family: 'Alumni Sans', var(--font-display);
-  font-size: 1.4rem; font-weight: 600;
-  color: var(--ink); text-decoration: none; display: inline-block;
-  margin-bottom: var(--sp-4);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-}
-.footer-brand p { font-size: 0.85rem; color: var(--ink-3); line-height: 1.6; margin-bottom: var(--sp-4); font-weight: 300; }
-.footer-col { display: flex; flex-direction: column; gap: var(--sp-3); }
-.footer-col-title { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); margin-bottom: var(--sp-2); }
-.footer-col a { color: var(--ink-2); text-decoration: none; font-size: 0.85rem; display: inline-flex; align-items: center; min-height: 32px; transition: color 0.18s; font-weight: 300; }
-.footer-col a:hover { color: var(--accent); }
 
-.reveal {
-  opacity: 0; transform: translateY(20px);
-  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.reveal.in { opacity: 1; transform: translateY(0); }
-
-@media (max-width: 960px) {
-  nav { padding: 0 var(--sp-6); }
-  .nav-links { display: none; }
-  .success-section { padding-top: 120px; }
-  footer { padding: var(--sp-8) var(--sp-6); grid-template-columns: 1fr; text-align: center; gap: var(--sp-8); }
-  .footer-brand { max-width: 100%; }
+@media (max-width: 680px) {
+  .site-nav .btn { padding-inline: 0.9rem; }
+  .success-card { box-shadow: 8px 8px 0 var(--ink); }
+  h1 { font-size: clamp(3.2rem, 18vw, 5rem); }
 }
 </style>
 </head>
 <body>
-
-<!-- NAV -->
-<nav>
-  <a href="index.html" class="logo" aria-label="HappyFinds home">HappyFinds<span class="logo-dot">.</span></a>
-  <ul class="nav-links" role="list">
-    <li><a href="index.html#services">Services</a></li>
-    <li><a href="index.html#how">Process</a></li>
-    <li><a href="index.html#results">Results</a></li>
-    <li><a href="index.html#pricing">Pricing</a></li>
-    <li><a href="index.html#faq">FAQ</a></li>
-  </ul>
-  <a href="index.html#pricing" class="btn btn-dark">Get started</a>
+<nav class="site-nav" aria-label="Primary navigation">
+  <a href="index.html" class="brand" aria-label="HappyFinds home"><span class="brand-mark">*</span> HappyFinds</a>
+  <a href="contact.html" class="btn btn-primary">Book a call</a>
 </nav>
 
-<!-- SUCCESS CONTENT -->
-<section class="success-section">
-  <div class="reveal">
-    <div class="success-icon" aria-hidden="true">✓</div>
-    <p class="section-label">Submission Confirmed</p>
-    <h1>You're on the list</h1>
-    <p class="section-sub">Thank you for requesting a video audit. We've received your business details and will email you within 24 hours to schedule a walkthrough demonstration.</p>
-    <a href="index.html" class="btn btn-accent btn-lg" style="margin-top: var(--sp-4);">Return to Homepage</a>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-brand">
-    <a href="index.html" class="footer-logo">HappyFinds<span style="color:var(--accent)">.</span></a>
-    <p>We build premium AI video systems designed for scalable marketing, combining state-of-the-art generation models with professional video editing.</p>
-    <p>© 2026 HappyFinds. Based in Kenya, rendering globally.</p>
-  </div>
-  <div class="footer-col">
-    <span class="footer-col-title">Services</span>
-    <a href="index.html#services">AI Video Ads</a>
-    <a href="index.html#services">Short-Form Content</a>
-    <a href="index.html#services">Avatar Clones</a>
-    <a href="index.html#services">Content Repurposing</a>
-  </div>
-  <div class="footer-col">
-    <span class="footer-col-title">Company</span>
-    <a href="index.html#results">Case Studies</a>
-    <a href="index.html#pricing">Pricing</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
-  </div>
-</footer>
-
-<script>
-/* ── Intersection Observer ── */
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); } });
-}, { threshold: 0.05 });
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-</script>
+<main class="success">
+  <section class="success-card" aria-labelledby="success-title">
+    <div class="success-mark" aria-hidden="true">✓</div>
+    <h1 id="success-title">You're on the list</h1>
+    <p>Thanks for reaching out. We received your details and will follow up within one business day with next steps for your AI video sprint.</p>
+    <div class="success-actions">
+      <a href="index.html" class="btn btn-sun">Back home</a>
+      <a href="contact.html" class="btn">Send another brief</a>
+    </div>
+  </section>
+</main>
 </body>
 </html>
