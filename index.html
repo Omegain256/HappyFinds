@@ -9,6 +9,8 @@
 <meta name="keywords" content="AI video agency, AI video ads, short-form video production, viral TikTok ads, video marketing Kenya, AI voice cloning, viral video content">
 <meta name="author" content="HappyFinds">
 <link rel="canonical" href="https://happyfinds.co.ke/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://happyfinds.co.ke/">
@@ -138,23 +140,12 @@ p, li { text-wrap: pretty; }
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  font-family: var(--font-display);
-  font-size: clamp(1.05rem, 2vw, 1.4rem);
-  line-height: 1;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
-.brand-mark {
-  width: 30px;
-  height: 30px;
-  display: grid;
-  place-items: center;
-  border: 2px solid var(--ink);
-  border-radius: 50%;
-  background: var(--sun);
-  color: var(--coral);
-  box-shadow: var(--shadow-tight);
+.brand-logo {
+  width: clamp(160px, 17vw, 216px);
+  height: auto;
 }
 
 .nav-links {
@@ -799,7 +790,7 @@ footer {
 <script>document.documentElement.classList.add('js');</script>
 
 <nav class="site-nav" aria-label="Primary navigation">
-  <a href="#" class="brand" aria-label="HappyFinds home"><span class="brand-mark">*</span> HappyFinds</a>
+  <a href="#" class="brand" aria-label="HappyFinds home"><img src="happyfinds-logo.svg" alt="HappyFinds" class="brand-logo"></a>
   <ul class="nav-links" role="list">
     <li><a href="#work">Work</a></li>
     <li><a href="#process">Process</a></li>
@@ -996,10 +987,15 @@ footer {
     <button class="modal-close" type="button" onclick="closeModal()" aria-label="Close modal">x</button>
     <h3 id="modal-heading">Free video audit</h3>
     <p>Tell us where you publish and what you sell. We will review the fastest creative opportunities for your brand.</p>
-    <form onsubmit="submitForm(event)" novalidate>
+    <form action="https://formsubmit.co/omegavicky2007@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="HappyFinds free video audit request">
+      <input type="hidden" name="_next" value="https://happyfinds.co.ke/success.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="source" value="Homepage free video audit modal">
       <input type="text" name="name" placeholder="Your name" required autocomplete="name">
       <input type="email" name="email" placeholder="Work email" required autocomplete="email">
-      <input type="url" name="website" placeholder="Website or social link" required>
+      <input type="url" name="website" placeholder="Website or social link (optional)">
       <select name="goal" required>
         <option value="" disabled selected>Primary video goal</option>
         <option>Launch a campaign</option>
@@ -1063,16 +1059,6 @@ document.addEventListener('keydown', event => {
   if (event.key === 'Escape') closeModal();
 });
 
-function submitForm(event) {
-  event.preventDefault();
-  document.getElementById('modal-inner').innerHTML = `
-    <div style="text-align:center;padding:1.5rem 0;">
-      <h3 style="max-width:none;margin-bottom:1rem;">Audit requested</h3>
-      <p style="max-width:34ch;margin:0 auto 1.5rem;">We will review your brand and follow up within 24 hours with the next step.</p>
-      <button class="btn btn-primary" type="button" onclick="closeModal()">Close</button>
-    </div>
-  `;
-}
 </script>
 </body>
 </html>

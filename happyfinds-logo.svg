@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" role="img" aria-labelledby="title desc">
+  <title id="title">HappyFinds logo</title>
+  <desc id="desc">A bright circular mark with a play sparkle followed by the HappyFinds wordmark.</desc>
+  <rect width="560" height="120" rx="24" fill="#ffffff"/>
+  <circle cx="60" cy="60" r="42" fill="#ffe44d" stroke="#281707" stroke-width="8"/>
+  <path d="M53 38 L53 82 L86 60 Z" fill="#fb563f" stroke="#281707" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M33 31 L38 43 L50 48 L38 53 L33 65 L28 53 L16 48 L28 43 Z" fill="#ff63aa" stroke="#281707" stroke-width="4" stroke-linejoin="round"/>
+  <text x="124" y="74" fill="#281707" font-family="Arial Black, Impact, system-ui, sans-serif" font-size="46" font-weight="900" letter-spacing="-1">HAPPYFINDS</text>
+  <circle cx="526" cy="60" r="10" fill="#fb563f" stroke="#281707" stroke-width="5"/>
+</svg>

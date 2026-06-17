@@ -7,6 +7,8 @@
 <title>Thank You for Contacting Us | HappyFinds</title>
 <meta name="description" content="Your HappyFinds message has been received. We will reach out soon to discuss your AI video production needs.">
 <meta name="author" content="HappyFinds">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MCJ8ZT1R4X"></script>
@@ -99,23 +101,12 @@ a { color: inherit; }
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  font-family: var(--font-display);
-  font-size: clamp(1.05rem, 2vw, 1.4rem);
-  line-height: 1;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
-.brand-mark {
-  width: 30px;
-  height: 30px;
-  display: grid;
-  place-items: center;
-  border: 2px solid var(--ink);
-  border-radius: 50%;
-  background: var(--sun);
-  color: var(--coral);
-  box-shadow: var(--shadow-tight);
+.brand-logo {
+  width: clamp(160px, 17vw, 216px);
+  height: auto;
 }
 
 .btn {
@@ -199,7 +190,7 @@ a { color: inherit; }
 </head>
 <body>
 <nav class="site-nav" aria-label="Primary navigation">
-  <a href="index.html" class="brand" aria-label="HappyFinds home"><span class="brand-mark">*</span> HappyFinds</a>
+  <a href="index.html" class="brand" aria-label="HappyFinds home"><img src="happyfinds-logo.svg" alt="HappyFinds" class="brand-logo"></a>
   <a href="contact.html" class="btn btn-primary">Book a call</a>
 </nav>
 
